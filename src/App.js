@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Pages/home';
+import Login from './Pages/loginpage';
+import Signup from './Pages/registerpage';
+import Welcome from './Pages/welcome';
+import Chat from './Pages/chatPage';
+import store from './redux/store';
+import { Provider } from 'react-redux';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div >
+        <BrowserRouter>
+        <Provider store={store}>
+        <Routes>
+        <Route path='/' element={<Welcome/>}/>
+        <Route path='/home' element={<Home/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/signup' element={<Signup/>} />
+        <Route path="/chat/:firstname" element={<Chat/>} />
+        </Routes>
+        </Provider>
+        </BrowserRouter>
+
+     </div>
   );
 }
 
