@@ -1,5 +1,6 @@
 # Chat Application Documentation
-INTRODUCTION- Real time Chat app for chatting with friends of friend list. Registered user can send messages to its list of friends (all the other registered user). User can like and delete messages and navigate to home without disturbing its existing chat.
+# INTRODUCTION-
+Real time Chat app for chatting with friends of friend list. Registered user can send messages to its list of friends (all the other registered user). User can like and delete messages and navigate to home without disturbing its existing chat.
 Following are components of app
 
 Pages-
@@ -25,7 +26,7 @@ Server- For connection apis for above routes
 
 Socket- For updating chat in real-time .
 
-INSTALLATION-
+# INSTALLATION-
 Packages needs to install to run application-
 1.	Install node.js 
 2.	Install dependent packages using 
@@ -48,13 +49,15 @@ For styling
 o	npm install bootstrap react-bootstrap
 o	npm install react-icons
 o	npm install react-avatar
-CONFIGURATION-
+
+# CONFIGURATION-
 1.	server.js file for database connection and routes (port no:5000)
 2.	socket.js file for chat connection with socket server (port no: 8080)
 3.	Client(reactapp) in local host server(port no 3000)
 4.	MongoDB local server used. Configuration file is db.js
-Mongoose database named admin used.Schemas such as users.js used 
-STEPS
+Mongoose database named admin used.Schemas such as users.js used
+
+# STEPS
 1.	After installing required packages run the react app using npm start after coming to project directory
 2.	Run server.js file and socket.js file using nodemon filename.
 3.	For friend list, first need to register.
@@ -64,6 +67,7 @@ STEPS
 7.	For deleting message press delete button.
 8.	For liking the message press like.
 
+# Screenshots of application
 LOGIN PAGE-
 ![image](https://github.com/NiharikPatel/chat-application/assets/132447067/a98c7b95-9c9a-4804-983a-a1b5e8cc1adb)
 
