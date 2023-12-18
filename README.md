@@ -1,22 +1,28 @@
-Chat Application Documentation
+# Chat Application Documentation
 INTRODUCTION- Real time Chat app for chatting with friends of friend list. Registered user can send messages to its list of friends (all the other registered user). User can like and delete messages and navigate to home without disturbing its existing chat.
 Following are components of app
+
 Pages-
 •	Register page- Handle registration of new
 •	Login page- Handle login of registered user
 •	Home page – After successful registration redirected to home where list of other users with button to initiate chat
 •	Chat page- Display chat between selected user and login user with like and delete button.
+
 Redux 
 •	Chatreducer- For updating the state and action of chat like send message, receive message, like, delete and for clearing the state once user is toggled to other user.
 •	Store- integrated in parent node.
+
 Models
 •	Users- model for saving registered users with token.
 •	Messages- for storing message before clearing the state.
+
 Routes
 •	Auth- For validating the registration id and password
 •	User- for creating and sending logged user id and token
 •	Friendlist- For retrieving the list of registered user for chat
+
 Server- For connection apis for above routes
+
 Socket- For updating chat in real-time .
 
 INSTALLATION-
